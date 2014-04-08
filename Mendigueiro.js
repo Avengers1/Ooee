@@ -1,7 +1,7 @@
 $(document).ready(function(){
 
 //When script loads
-API.sendChat("/me :warning: Troco fans - Ligado v.1.0 :warning: ")
+API.sendChat("/me :warning: Troco fans - Ligado v.1.0 :warning: Editado pelo - Avengers ")
 $('#button-vote-positive').click();
 
 //global var
