@@ -50,7 +50,7 @@ function command(value)
 		
 		case "/comandos":
 		//API.sendChat(total + " People fanned since launched");
-		API.chatLog (" Comandos: /desligar : Desliga o bot , /reiniciar Reinicia o bot, /chat Falara uma frase aleatoria, Para ver novamente digite /comandos ~Novos Comandos em BREVE~", true)
+		API.chatLog (" Comandos: /desligar : Desliga o bot /reiniciar Reinicia o bot /chat Falara uma frase aleatoria. Para ver novamente digite /comandos ~Novos Comandos em BREVE~", true)
 		break;
 		
 		case "/chat":
