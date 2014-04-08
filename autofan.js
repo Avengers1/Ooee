@@ -24,7 +24,7 @@ function fanEveryone(data) {
 API.on(API.USER_FAN, fanEveryone);
 
 //chat commands and so on below here 
-var intervalMessage = setInterval(function(){message();},280000);
+var intervalMessage = setInterval(function(){message();},310000);
 
 function message(){
 var m, msgs;
@@ -47,7 +47,7 @@ function command(value)
 		break;
 
 		case "/reiniciar":
-	    intervalMessage = setInterval(function(){message();},280000);API.chatLog("Bot Reiniciando em ",true);API.chatLog("3..2..1",true);API.chatLog("Troco Fans - Ligado V.1.4",false);API.chatLog("Editado por - Avengers ",false);API.chatLog("Para ver os comandos digite /comandos ", false);API.chatLog("Qualquer coisa me adicione no facebook: https://www.facebook.com/MateusVicentin ", false);
+	    intervalMessage = setInterval(function(){message();},310000);API.chatLog("Bot Reiniciando em ",true);API.chatLog("3..2..1",true);API.chatLog("Troco Fans - Ligado V.1.4",false);API.chatLog("Editado por - Avengers ",false);API.chatLog("Para ver os comandos digite /comandos ", false);API.chatLog("Qualquer coisa me adicione no facebook: https://www.facebook.com/MateusVicentin ", false);
 		break;
 
 		case "/comandos":
