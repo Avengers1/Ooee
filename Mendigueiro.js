@@ -1,8 +1,7 @@
 $(document).ready(function(){
 
 //When script loads
-API.sendChat("/me :warning: Troco fans - Ligado v.1.1 :warning:")
-$('#button-vote-positive').click();
+javascript:API.chatLog("Troco Fans - Ligado V.1.2",false);API.chatLog("Editado por - Avengers ",false);API.chatLog("Para ver os comandos digite /comandos ", false);API.chatLog("Qualquer coisa me adicione no facebook: https://www.facebook.com/MateusVicentin ", false);
 
 //global var
 var total = 0;
@@ -23,7 +22,7 @@ function fanEveryone(data) {
 API.on(API.USER_FAN, fanEveryone);
 
 //chat commands and so on below here 
-var intervalMessage = setInterval(function(){message();},260000);
+var intervalMessage = setInterval(function(){message();},280000);
 
 function message(){
 var m, msgs;
@@ -42,16 +41,16 @@ function command(value)
 	{
 		case "/desligar":
 		clearInterval(intervalMessage);
-		API.chatLog("Oque? Voce parou de mendigar? :(", alert)
+		API.chatLog("Oque? Voce quis parar de mendigar?, espero que mendigue logo denovo T_T ", false)
 		break;
 		
 		case "/reiniciar":
-	    intervalMessage = setInterval(function(){message();},260000);
+	    intervalMessage = setInterval(function(){message();},280000);
 		break;
 		
 		case "/comandos":
 		//API.sendChat(total + " People fanned since launched");
-		API.chatLog(total + " Comandos: /desligar : Desliga o bot , /reiniciar Reinicia o bot, /chat Falara uma frase aleatoria, Para ver novamente digite /comandos ~Novos Comandos em BREVE~", alert)
+		API.chatLog (" Comandos: /desligar : Desliga o bot , /reiniciar Reinicia o bot, /chat Falara uma frase aleatoria, Para ver novamente digite /comandos ~Novos Comandos em BREVE~", true)
 		break;
 		
 		case "/chat":
