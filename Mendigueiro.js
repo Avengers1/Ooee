@@ -45,13 +45,13 @@ function command(value)
 		API.chatLog("Oque? Voce parou de mendigar? :(", alert)
 		break;
 		
-		case "/reniciar":
+		case "/reiniciar":
 	    intervalMessage = setInterval(function(){message();},260000);
 		break;
 		
 		case "/comandos":
 		//API.sendChat(total + " People fanned since launched");
-		API.chatLog(total + " Comandos: /desligar : Desliga o bot , /reniciar Reinicia o bot, /chat Falara uma frase aleatoria, Para ver novamente digite /comandos", alert)
+		API.chatLog(total + " Comandos: /desligar : Desliga o bot , /reiniciar Reinicia o bot, /chat Falara uma frase aleatoria, Para ver novamente digite /comandos ~Novos Comandos em BREVE~", alert)
 		break;
 		
 		case "/chat":
