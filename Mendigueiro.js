@@ -42,16 +42,16 @@ function command(value)
 	{
 		case "/desligar":
 		clearInterval(intervalMessage);
-		API.chatLog("BOT DA ETD => DESLIGADO", alert)
+		API.chatLog("Oque? Voce parou de mendigar? :(", alert)
 		break;
 		
-		case "/restart":
+		case "/reniciar":
 	    intervalMessage = setInterval(function(){message();},260000);
 		break;
 		
-		case "/falar":
+		case "/comandos":
 		//API.sendChat(total + " People fanned since launched");
-		API.chatLog(total + " People fanned since launched", alert)
+		API.chatLog(total + " Comandos: /desligar : Desliga o bot , /reniciar Reinicia o bot, /chat Falara uma frase aleatoria, Para ver novamente digite /comandos", alert)
 		break;
 		
 		case "/chat":
