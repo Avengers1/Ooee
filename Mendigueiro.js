@@ -1,7 +1,7 @@
 $(document).ready(function(){
 
 //When script loads
-API.sendChat("/me Troco fans :v:  Ligado v.1.0 ")
+API.sendChat("/me :warning: Troco fans - Ligado v.1.0 :warning: ")
 $('#button-vote-positive').click();
 
 //global var
@@ -27,7 +27,7 @@ var intervalMessage = setInterval(function(){message();},260000);
 
 function message(){
 var m, msgs;
-msgs = ["Eu troco fan, alguem afim? :v:", "Alguem afim de trocar fan?,so mencionar :3", "Troco fan, so avisar <3", "Troco fan,retribuo na HORA GO? :+1:" ];
+msgs = ["/me Eu troco fan, alguem afim? :v:", "/me Alguem afim de trocar fan?,so mencionar :3", "/me Troco fan, so avisar <3", "/meTroco fan,retribuo na HORA GO? :+1:", "/me Alguem quer trocar fan? so virar e avisar que retribuo na HORA :warning:" ];
 
 m = Math.floor(Math.random() * msgs.length);
 API.sendChat(msgs[m]);		  
