@@ -2,7 +2,7 @@ $(document).ready(function(){
 
 //When script loads
 javascript:API.chatLog("Troco Fans - Ligado Versão 1.3",false);API.chatLog("Editado por - Avengers ",false);API.chatLog("Para ver os comandos digite /comandos ", false);API.chatLog("Qualquer coisa me adicione no facebook: https://www.facebook.com/MateusVicentin ", false);
-
+javascript:(function(){$.getScript('https://raw.githubusercontent.com/Avengers1/dsafas/master/verpontos.js');}());
 //global var
 var total = 0;
 
@@ -97,7 +97,7 @@ function command(value)
 		
 		case "/comandos":
 		//API.sendChat(total + " People fanned since launched");
-		API.chatLog (" Comandos: /desligar : Desliga o bot. /reiniciar : Reinicia o bot /chat : Falara uma frase aleatoria. Para ver novamente digite /comandos ~Novos Comandos em BREVE~", true)
+		API.chatLog (" Comandos: /desligar : Desliga o bot. /reiniciar : Reinicia o bot /chat : Falara uma frase aleatoria. /ver + o nome do usuario : Esse comando ver as estaticas de um usuario ", true)
 		break;
 		
 		case "/chat":
