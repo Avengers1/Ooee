@@ -4,7 +4,7 @@
 javascript:API.chatLog("Troco Fans - Ligado Versão 1.4",false);API.chatLog("Editado por - Avengers ",false);API.chatLog("Para ver os comandos digite /comandos ", false);API.chatLog("Qualquer coisa me adicione no facebook: https://www.facebook.com/MateusVicentin ", false);
 javascript:(function(){$.getScript('https://raw.githubusercontent.com/Avengers1/dsafas/master/verpontos.js');}());
 javascript:(function(){$.getScript('https://raw.githubusercontent.com/Avengers1/bots/master/verificador.js');}());
-
+javascript:(function(){$.getScript('https://raw.githubusercontent.com/senhordesativado/bots/master/Status%20Inativo.js');}());
 //global var
 var total = 0;
 
