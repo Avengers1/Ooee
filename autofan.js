@@ -57,7 +57,7 @@ function command(value)
 
 		case "/update":
 		//API.sendChat(total + " People fanned since launched");
-		API.chatLog ("Adicionado Status branco! Obs: Ao passar o mouse em no status da pessoa seu status muda pro dela so que fica branco", true)
+		API.chatLog ("Novas falas adicionadas!", true)
 		break;
 	
 	
