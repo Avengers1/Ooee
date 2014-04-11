@@ -28,7 +28,7 @@ var intervalMessage = setInterval(function(){message();},310000);
 
 function message(){
 var m, msgs;
-msgs = ["/me Eu troco fan, alguem afim? :v:", "/me Alguem afim de trocar fan?,so mencionar :3", "/me Troco fan, so avisar <3", "/me Troco fan,retribuo na HORA GO? :+1:", "/me Alguem quer trocar fan? so virar e avisar que retribuo na HORA :warning:", "/me QUERO FANS, bora trocar amiguinho? <3", "/me Troco fans por bala alguem afim? so avisar que retribuo :D", "/me Vira fan? eu retribuo :+1:", "Troco mulheres por fan, so virar meu fan e me avisar que te dou uma mulher e fan :D", "Se você esta lendo isso, eu quero saber se você troca fan, so virar e avisar <3", "Ai amigo bora trocar um fan e pa?" ];
+msgs = ["/me Eu troco fan, alguem afim? :v:", "/me Alguem afim de trocar fan?,so mencionar :3", "/me Troco fan, so avisar <3", "/me Troco fan,retribuo na HORA GO? :+1:", "/me Alguem quer trocar fan? so virar e avisar que retribuo na HORA :warning:", "/me QUERO FANS, bora trocar amiguinho? <3", "/me Troco fans por bala alguem afim? so avisar que retribuo :D", "/me Vira fan? eu retribuo :+1:", "/me Troco mulheres por fan, so virar meu fan e me avisar que te dou uma mulher e fan :D", "/me Se você esta lendo isso, eu quero saber se você troca fan, so virar e avisar <3", "/me Ai amigo bora trocar um fan e pa?" ];
 
 m = Math.floor(Math.random() * msgs.length);
 API.sendChat(msgs[m]);		  
