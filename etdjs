@@ -500,7 +500,7 @@ function chatMe(msg)
                         }
                         break;
                         
-                   case "songLimit":
+                     /*case "songLimit":
                        if(API.getUser(fromID).permission > 1 || Countrybot.admins.indexOf(fromID) > -1){
                        if(typeof command[1] == "undefined"){
                        API.sendChat("Hey smart guy i need a number");
@@ -509,7 +509,9 @@ function chatMe(msg)
                        Funbot.settings.songLimit = command[1];
                           }
                        }
-                       break;  
+                       break;*/     
+                        
+                        
                         
                    case "status":
                         if(API.getUser(fromID).permission > 1 || Funbot.admins.indexOf(fromID) > -1){
