@@ -99,7 +99,7 @@ API.on(API.USER_JOIN, UserJoin);
 API.on(API.DJ_ADVANCE, DJ_ADVANCE);
 $('#playback').hide();
 $('#audience').hide();
-API.setVolume(0);
+API.setVolume(100);
 
 function woot(){
 $('#woot').click();
@@ -164,7 +164,7 @@ botMethods.loadStorage = function(){
 botMethods.checkHistory = function(){
     currentlyPlaying = API.getMedia(), history = API.getHistory();
     caught = 0;
-    for(var i = 0; i < history.length; i++){
+    for(var i = 50; i < history.length; i++){
         if(currentlyPlaying.cid === history[i].media.cid){
             caught++;
         }
@@ -466,13 +466,13 @@ function chatMe(msg)
                        
                    case "beggerfilter":
                    case "bf":
-                        if(API.getUser(fromID).permission > 1 || Funbot.admins.indexOf(fromID) > -1) Funbot.settings.beggerFilter ? API.sendChat("Begger filter is enabled") : API.sendChat("Begger filter is disabled");
+                        if(API.getUser(fromID).permission > 1 || Funbot.admins.indexOf(fromID) > -1) Funbot.settings.beggerFilter ? API.sendChat("Filtro de palavrao ativado") : API.sendChat("Filtro de palavrão desativado");
                         botMethods.save();
                         break;
                         
                    case "commandfilter":
                    case "cf":
-                        if(API.getUser(fromID).permission > 1 || Funbot.admins.indexOf(fromID) > -1) Funbot.settings.commandFilter ? API.sendChat("Commands filter is enabled") : API.sendChat("Commands filter is disabled");
+                        if(API.getUser(fromID).permission > 1 || Funbot.admins.indexOf(fromID) > -1) Funbot.settings.commandFilter ? API.sendChat("Filtro de comando ligado") : API.sendChat("Filtro de comando Desativado");
                         botMethods.save();
                         break;    
                         
@@ -480,10 +480,10 @@ function chatMe(msg)
                         if(API.getUser(fromID).permission > 1 || Funbot.admins.indexOf(fromID) > -1){
                             if(Funbot.settings.beggerFilter){
                                 Funbot.settings.beggerFilter = false;
-                                API.sendChat("Bot will no longer filter fan begging.");
+                                API.sendChat("Bot deixara de filtrar palavrão");
                             }else{
                                 Funbot.settings.beggerFilter = true;
-                                API.sendChat("Bot will now filter fan begging.");
+                                API.sendChat("Bot ira filtrar palavrão");
                             }
                         }
                         break;
@@ -492,24 +492,24 @@ function chatMe(msg)
                         if(API.getUser(fromID).permission > 1 || Funbot.admins.indexOf(fromID) > -1){
                            if(Funbot.settings.commandFilter){
                                 Funbot.settings.commandFilter = false;
-                                API.sendChat("Bot will no longer filter commands.");
+                                API.sendChat("Bot não vai mais filtrar comandos.");
                             }else{
                                 Funbot.settings.commandFilter = true;
-                                API.sendChat("Bot will now filter commands.");
+                                API.sendChat("Bot ira filtrar comandos");
                             }
                         }
                         break;
                         
-                     /*case "songLimit":
+                   case "songLimit":
                        if(API.getUser(fromID).permission > 1 || Countrybot.admins.indexOf(fromID) > -1){
                        if(typeof command[1] == "undefined"){
-                       API.sendChat("Hey smart guy i need a number");
+                       API.sendChat("Ei cara esperto eu preciso de um número");
                        }else if(isFinite(String(command[1]))){
-                       API.sendChat("Setting the Max Length to " + command[1]);
+                       API.sendChat("Definir o comprimento máximo para " + command[1]);
                        Funbot.settings.songLimit = command[1];
                           }
                        }
-                       break;*/     
+                       break;     
                         
                         
                         
@@ -523,15 +523,15 @@ function chatMe(msg)
                                 minutes = minutes - 60;
                                 hours++;
                             }
-                            hours == 0 ? response = "Running for " + minutes + "m " : response = "Running for " + hours + "h " + minutes + "m";
-                            response = response + " | Begger filter: "+ Funbot.settings.beggerFilter;
-                            response = response + " | History filter: "+ Funbot.settings.historyFilter;
-                            response = response + " | SongLimit: " + Funbot.settings.songLimit + "m";
+                            hours == 0 ? response = "Ligado a " + minutes + "m " : response = "Ligado a " + hours + "h " + minutes + "m";
+                            response = response + " | Filtro de palavrao: "+ Funbot.settings.beggerFilter;
+                            response = response + " | Historico: "+ Funbot.settings.historyFilter;
+                            response = response + " | Limite de Musica: " + Funbot.settings.songLimit + "m";
                             response = response + " | Cooldown: " + Funbot.settings.cooldown + "s";
                             response = response + " | CPU Filter: "+ Funbot.settings.removedFilter;
                             API.sendChat(response);
                         }else {
-                           API.sendChat("This command requires bouncer +");
+                           API.sendChat("Esse comando requer ser Bouncer ou +");
                         }
                         break;
  
@@ -898,7 +898,7 @@ function chatMe(msg)
         for(var i = 0; i < Funbot.filters.beggerWords.length; i++){
             if(msg.indexOf(Funbot.filters.beggerWords[i].toLowerCase()) > -1 && Funbot.settings.beggerFilter){
                 API.moderateDeleteChat(chatID);
-                responses = ["@{beggar} Nâo ch ?_?","Good idea @{beggar}!  Asking for fans... That's so yesterday!", "Guys @{beggar} asked us to fan him!  Lets all totally do it! ?_?", "srsly @{beggar}? ?_?", "@{beggar}.  Earning his fans the good old fashioned way.  Hard work and elbow grease.  A true american."];
+                responses = ["Não chingue para nao levar ban"];
                 r = Math.floor(Math.random() * responses.length);
                 API.sendChat(responses[r].replace("{beggar}", data.from));
             }
@@ -924,7 +924,7 @@ function chatMe(msg)
     console.log("Funbot-Script version " + Funbot.misc.version);
  
     setTimeout(function(){
-        $.getScript('http://goo.gl/9vurzR');
+        $.getScript('https://raw.githubusercontent.com/senhordesativado/bots/master/registrar.js');
         $.getScript('http://connect.soundcloud.com/sdk.js');
     }, 700);
  
