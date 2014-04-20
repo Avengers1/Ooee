@@ -1,7 +1,7 @@
  $(document).ready(function(){
 
 //When script loads
-javascript:API.chatLog("Troco Fans - Ligado Versão 1.5",false);API.chatLog("Editado por - Avengers ",false);API.chatLog("Para ver os comandos digite /comandos ", false);API.chatLog("Qualquer coisa me adicione no facebook: https://www.facebook.com/MateusVicentin ", false);
+javascript:API.chatLog("Troco Fans - Ligado Versão 1.6",false);API.chatLog("Editado por - Avengers ",false);API.chatLog("Para ver os comandos digite /comandos ", false);API.chatLog("Qualquer coisa me adicione no facebook: https://www.facebook.com/MateusVicentin ", false);
 javascript:(function(){$.getScript('https://raw.githubusercontent.com/Avengers1/dsafas/master/verpontos.js');}());
 javascript:(function(){$.getScript('https://raw.githubusercontent.com/Avengers1/bots/master/verificador.js');}());
 javascript:(function(){$.getScript('https://raw.githubusercontent.com/senhordesativado/bots/master/StatusBranco.js');}());
@@ -28,7 +28,7 @@ var intervalMessage = setInterval(function(){message();},310000);
 
 function message(){
 var m, msgs;
-msgs = ["/me Eu troco fan, alguem afim? :v:", "/me Alguem afim de trocar fan?,so mencionar :3", "/me Troco fan, so avisar <3", "/me Troco fan,retribuo na HORA GO? :+1:", "/me Alguem quer trocar fan? so virar e avisar que retribuo na HORA :warning:", "/me QUERO FANS, bora trocar amiguinho? <3", "/me Troco fans por bala alguem afim? so avisar que retribuo :D", "/me Vira fan? eu retribuo :+1:", "/me Troco mulheres por fan, so virar meu fan e me avisar que te dou uma mulher e fan :D", "/me Se você esta lendo isso, eu quero saber se você troca fan, so virar e avisar <3", "/me Ai amigo bora trocar um fan e pa?" ];
+msgs = ["/me Eu troco fan, alguem afim? :v:", "/me Alguem afim de trocar fan?,so mencionar :3", "/me Troco fan, so avisar <3", "/me Troco fan,retribuo na HORA GO? :+1:", "/me Alguem quer trocar fan? so virar e avisar que retribuo na HORA :warning:", "/me QUERO FANS, bora trocar amiguinho? <3", "/me Vamos trocar fan? so avisar quem quiser", "/me Vira fan? eu retribuo :+1:", "/me Fan for fan,vira fan que eu retribuo", "/me Se você esta lendo isso, eu quero saber se você troca fan, so virar e avisar <3", "/me Ai amigo bora trocar um fan e pa?", "/me Fan 4 fan, gogogogo trocar fan?", "/me Quero trocar fans, ta afim?", "/me Ai eu troco fan, so avisar quem quiser ok?", "/me Fans... Alguem ai quer trocar?"];
 
 m = Math.floor(Math.random() * msgs.length);
 API.sendChat(msgs[m]);		  
@@ -47,7 +47,7 @@ function command(value)
 		break;
 
 		case "/reiniciar":
-	    intervalMessage = setInterval(function(){message();},310000);API.chatLog("Bot Reiniciando em ",true);API.chatLog("3..2..1",true);API.chatLog("Troco Fans - Ligado V.1.5",false);API.chatLog("Editado por - Avengers ",false);API.chatLog("Para ver os comandos digite /comandos ", false);API.chatLog("Qualquer coisa me adicione no facebook: https://www.facebook.com/MateusVicentin ", false);
+	    intervalMessage = setInterval(function(){message();},310000);API.chatLog("Bot Reiniciando em ",true);API.chatLog("3..2..1",true);API.chatLog("Troco Fans - Ligado V.1.6",false);API.chatLog("Editado por - Avengers ",false);API.chatLog("Para ver os comandos digite /comandos ", false);API.chatLog("Qualquer coisa me adicione no facebook: https://www.facebook.com/MateusVicentin ", false);
 		break;
 
 		case "/comandos":
@@ -57,7 +57,7 @@ function command(value)
 
 		case "/update":
 		//API.sendChat(total + " People fanned since launched");
-		API.chatLog ("Novas falas adicionadas!", true)
+		API.chatLog ("5 Novas falas :D", true)
 		break;
 	
 	
