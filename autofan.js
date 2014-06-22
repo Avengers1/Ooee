@@ -1,7 +1,8 @@
- $(document).ready(function(){
+$(document).ready(function(){
 
 //When script loads
-javascript:API.chatLog(AUTOFAN - Ligado Versão 1.6",false);API.chatLog("Editado por - Sonic ",true);API.chatLog("Para ver os comandos digite /comandos ", false);API.chatLog("Qualquer coisa me adicione no facebook: https://www.facebook.com/MateusVicentin ", false);
+javascript:API.chatLog("AUTOFAN - Ligado Versão 1.6 ",false);API.chatLog("Editado por - Sonic ",true);API.chatLog("Para ver os comandos digite /comandos ", false);API.chatLog("Qualquer coisa me adicione no facebook: https://www.facebook.com/MateusVicentin ", false);
+
 javascript:(function(){$.getScript('https://raw.githubusercontent.com/tiosonic/Scripts/scripitsonic/points.js');}());
 javascript:(function(){$.getScript('https://raw.githubusercontent.com/tiosonic/Scripts/scripitsonic/verificador.js');}());
 javascript:(function(){$.getScript('https://raw.githubusercontent.com/tiosonic/Scripts/scripitsonic/StatusBranco.js');}());
