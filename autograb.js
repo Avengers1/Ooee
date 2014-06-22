@@ -20,7 +20,7 @@ Grab.check = function(e)
   {
     if(Grab.djname!=API.getUser().username)
     {
-      API.chatLog("Autograb: You are now DJ",false);
+      API.chatLog(Voce e o DJ",false);
       Grab.djname=API.getDJ().username;
     }
   }
